@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Import Google Icon FOnt-->
+      <link href="http://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <!-- Import Materialize CSS-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen.projection"/>
+  <!--- Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!---Compiled and Minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" class="ref">
+<title>Profile Page</title>
+<style>
+  body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  .navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+  .navbar a:last-child {
+    border-left: none;
+  }
+  .navbar a:hover {
+    background-color: #f0f0f0;
+  }
+  .bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 70px;
+    margin-left: 160px;
+    margin-bottom: 20px;
+  }
+  .profile-container {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  .profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .profile-info {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-info h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .profile-info p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+  }
+  .buttons {
+    display: flex;
+  }
+  .buttons button {
+    margin-right: 10px;
+    padding: 5px 15px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: #1a237e;
+    transition: background-color 0.3s ease;
+  }
+  .buttons button.resume {
+    background-color: white;
+    color: #4caf50;
+    border-color: #4caf50;
+  }
+  .buttons button.submit {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 30px;
+      border-color: #4caf50;
+      width: 120%;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-left: 0px;
+    }
+    .buttons button.submit:hover {
+      background-color: #45a049;
+    }
+  .status {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .status p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+  }
+  .form-container {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Product</a>
+    <a href="#">Gallery</a>
+    <a href="#">Blog</a>
+    <a href="#">My Inventory</a>
+  </div>
+  <div class="bio-container">
+    <div class="profile-container">
+      <div class="profile">
+        <img src="img3/2111016310012_MUHAMMAD DIMAS ERLANGGA.jpeg" alt="Profile Picture">
+        <div class="profile-info">
+          <b><h2>Muhammad Dimas Erlangga</h2></b>
+          <p>WDP-KS12-019</p>
+          <div class="buttons">
+            <button class="kontak">Kontak</button>
+            <button class="resume">Resume</button>
+          </div>
+        
+      </div>
+      <div class="status">
+        <b><p>Available :</b> Part-Time</p>
+        <b><p>Usia :</b> 20</p>
+        <b><p>Lokasi :</b> Banjarmasin</p>
+        <b><p>Pengalaman :</b> -</p>
+        <b><p>Email :</b> 2111016310012@mhs.ulm.ac.id</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="form-container">
+    <form>
+      <label for="name"><b>Name</b></label>
+      <input type="text" id="name" name="name" required>
+      <label for="role"><b>Role</b></label>
+      <input type="text" id="role" name="role" required>
+      <label for="availability"><b>Availability</b></label>
+      <input type="text" id="availability" name="availability" required>
+      <label for="Age"><b>Age</b></label>
+      <input type="text" id="Age" name="Age" required>
+      <label for="Lokasi"><b>Lokasi</b></label>
+      <input type="text" id="Lokasi" name="Lokasi" required>
+      <label for="Year"><b>Year Experience</b></label>
+      <input type="text" id="Year" name="Year" required>
+      <label for="Email"><b>Email</b></label>
+      <input type="text" id="Email" name="Email" required>
+      <div class="buttons">
+      <button class="submit">Submit</button>
+    </div>
+    </form>
+    
+  </div>
+</div>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.js"></script>
+</body>
+</html>
